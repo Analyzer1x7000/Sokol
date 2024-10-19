@@ -1,36 +1,36 @@
-![image](https://github.com/Analyzer1x7000/Kestrel/assets/103800652/0565b017-9211-4a1f-91ab-97a03677fa3e)
+![image](https://github.com/Analyzer1x7000/Sokol/assets/103800652/0565b017-9211-4a1f-91ab-97a03677fa3e)
 
 
-# About Kestrel
-Kestrel is a PowerShell script designed to be used via CrowdStrike RTR as a `CloudFile`. Similar to KAPE, it pulls critical forensic artifacts from a target during IR, so that the artifacts can be analyzed on a separate forensic workstation.
+# About Sokol
+Sokol is a PowerShell script designed to be used via CrowdStrike RTR as a `CloudFile`. Similar to KAPE, it pulls critical forensic artifacts from a target during IR, so that the artifacts can be analyzed on a separate forensic workstation.
 
-Kestrel contains several modules that can be run individually, or all at once.
+Sokol contains several modules that can be run individually, or all at once.
 
 ## Setup
-Create a new script via `Configuration` -> `Response Scripts & Files` and name it "Kestrel"
+Create a new script via `Configuration` -> `Response Scripts & Files` and name it "Sokol"
 
-![image](https://github.com/Analyzer1x7000/Kestrel/assets/103800652/b0b05280-712d-4aaa-bd32-8f8842a13691)
+![image](https://github.com/Analyzer1x7000/Sokol/assets/103800652/b0b05280-712d-4aaa-bd32-8f8842a13691)
 
-## Running Kestrel from CrowdStrike RTR Console
+## Running Sokol from CrowdStrike RTR Console
 
-To run Kestrel from the CrowdStrike RTR console:
+To run Sokol from the CrowdStrike RTR console:
 ```
-  runscript -CloudFile='Kestrel' -CommandLine='-module all'
+  runscript -CloudFile='Sokol' -CommandLine='-module all'
   OR 
-  runscript -CloudFile='Kestrel' -CommandLine='-module Services'
+  runscript -CloudFile='Sokol' -CommandLine='-module Services'
 ```
 
-## Running Kestrel Directly w/ Powershell
+## Running Sokol Directly w/ Powershell
 
 - Set execution policy to Unrestricted under the scope of the current process
 
 `Set-ExecutionPolicy Unrestricted -Scope Process`
 
-- Run Kestrel.ps1 with the appropriate parameter(s)
+- Run Sokol.ps1 with the appropriate parameter(s)
 
-`.\Kestrel.ps1 -module all`
+`.\Sokol.ps1 -module all`
 
-![image](https://github.com/Analyzer1x7000/Kestrel/assets/103800652/3628e476-7e22-4449-be65-1f672ebff4b0)
+![image](https://github.com/Analyzer1x7000/Sokol/assets/103800652/3628e476-7e22-4449-be65-1f672ebff4b0)
 
 ## Features
 ```
