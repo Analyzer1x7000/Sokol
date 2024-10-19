@@ -30,8 +30,6 @@ To run Sokol from the CrowdStrike RTR console:
 
 `.\Sokol.ps1 -module all`
 
-![image](https://github.com/Analyzer1x7000/Sokol/assets/103800652/3628e476-7e22-4449-be65-1f672ebff4b0)
-
 ## Features
 ```
 PARAMETERS
