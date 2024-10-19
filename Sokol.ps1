@@ -694,7 +694,7 @@ function Get-Recall {
 
 # [END] Forensics - Miscellaneous
 
-$outputLog = "C:\Windows\Temp\IR\0 - Kestrel_Output.txt"
+$outputLog = "C:\Windows\Temp\IR\0 - Sokol_Output.txt"
 Start-Transcript -Path $outputLog -Force
 
 # Function to invoke all modules at once
